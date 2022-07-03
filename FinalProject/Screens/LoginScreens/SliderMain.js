@@ -25,7 +25,7 @@ export default function SliderMain({navigation}) {
         }
     ]
     const onViewRef = React.useRef((viewableItems)=> {
-        console.log(viewableItems.changed[0].index)
+        // console.log(viewableItems.changed[0].index)
         setScrollIndicators(viewableItems.changed[0].index)
         // Use viewable items in state or as intended
     })

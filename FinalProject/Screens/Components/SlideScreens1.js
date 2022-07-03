@@ -1,7 +1,5 @@
 import { View, Text, StyleSheet, Image, ScrollView } from 'react-native'
 import React from 'react'
-import AntDesign from 'react-native-vector-icons/AntDesign'
-import LinearGradient from 'react-native-linear-gradient';
 
 export default function SlideScreens1() {
   return (

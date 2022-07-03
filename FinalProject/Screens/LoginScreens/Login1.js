@@ -2,7 +2,7 @@ import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity } from 'rea
 import React from 'react'
 import LinearGradient from 'react-native-linear-gradient';
 
-export default function Login1() {
+export default function Login1({navigation}) {
   return (
     <LinearGradient style={styles.container} colors={['white','#CDDCF6']} start={{x:0, y:0}} end={{x:1, y:0}}>
         <LinearGradient style={styles.Section1} locations={[0, 0.5, 1]} colors={['#5585F5', 'white', '#CDDCF6']}>
@@ -11,13 +11,13 @@ export default function Login1() {
         </LinearGradient>
         <View style={styles.Section2}>
           <Text style={{fontFamily:'Poppins-Regular', marginVertical:'8%'}}>Invited? Add Referal Code </Text>
-          <TouchableOpacity style={styles.NewAccBTN}>
-            <LinearGradient style={{width:'100%',height:'100%', alignItems:'center', justifyContent:'center', borderRadius:10}} colors={['#1774FF', '#8A1DDD']} locations={[0,0.75]}>
+          <TouchableOpacity style={styles.NewAccBTN} onPress={()=>navigation.navigate('ReferralCode')}>
+            <LinearGradient style={{width:'100%',height:'100%', alignItems:'center', justifyContent:'center', borderRadius:10}} colors={['#1774FF', '#8A1DDD']} locations={[0,0.99]}>
                 <Text style={{fontFamily:'Poppins-Regular',  color:'white', letterSpacing:0.9}}>Create  New  Account</Text>
             </LinearGradient>
           </TouchableOpacity>
-          <LinearGradient style={styles.Login} colors={['#1774FF', '#8A1DDD']} locations={[0,0.75]}>
-            <TouchableOpacity activeOpacity={0.9} style={styles.LoginBTN}><Text style={{fontFamily:'Poppins-Regular',  color:'#1774FF', letterSpacing:0.9}}>Log in to existing account</Text></TouchableOpacity>
+          <LinearGradient style={styles.Login} colors={['#1774FF', '#8A1DDD']} locations={[0,0.99]}>
+            <TouchableOpacity activeOpacity={0.9} style={styles.LoginBTN}><Text style={{fontFamily:'Poppins-Regular',  color:'#1774FF', letterSpacing:0.9}}>Login to existing account</Text></TouchableOpacity>
           </LinearGradient>
         </View>
     </LinearGradient>
