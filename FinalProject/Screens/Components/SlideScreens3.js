@@ -11,8 +11,8 @@ export default function SlideScreens1() {
               <Image source={require('../Assets/Mask6.png')} style={styles.Image2} />
           </View>
           <View style={styles.Section2}>
-              <Text style={{fontSize:25, color:'black', fontFamily:'Poppins-Regular'}}>Crypto Card:</Text>
-              <Text style={{fontSize:15, color:'black', fontFamily:'Poppins-Regular'}}>Banking the UNBANKED in Africa and the World.</Text>
+              <Text style={{fontSize:25, color:'#2C2C4E', fontFamily:'Poppins-Regular'}}>Crypto Card:</Text>
+              <Text style={{fontSize:15, color:'#2C2C4E', fontFamily:'Poppins-Regular'}}>Banking the UNBANKED in Africa and the World.</Text>
           </View>
       </ScrollView>
   )
@@ -39,6 +39,6 @@ const styles = StyleSheet.create({
       flex:1,
       paddingLeft:20,
       paddingRight:60,
-      marginTop:'-35%',
+      marginTop:'-45%',
     }
 })

@@ -16,8 +16,8 @@ export default function Login1({navigation}) {
                 <Text style={{fontFamily:'Poppins-Regular',  color:'white', letterSpacing:0.9}}>Create  New  Account</Text>
             </LinearGradient>
           </TouchableOpacity>
-          <LinearGradient style={styles.Login} colors={['#1774FF', '#8A1DDD']} locations={[0,0.99]}>
-            <TouchableOpacity activeOpacity={0.9} style={styles.LoginBTN}><Text style={{fontFamily:'Poppins-Regular',  color:'#1774FF', letterSpacing:0.9}}>Login to existing account</Text></TouchableOpacity>
+          <LinearGradient style={styles.Login} colors={['#1774FF', '#8A1DDD']} locations={[0,0.85]}>
+            <TouchableOpacity activeOpacity={0.9} style={styles.LoginBTN} onPress={()=>navigation.navigate('MainLogin')}><Text style={{fontFamily:'Poppins-Regular',  color:'#1774FF', letterSpacing:0.9}}>Login to existing account</Text></TouchableOpacity>
           </LinearGradient>
         </View>
     </LinearGradient>

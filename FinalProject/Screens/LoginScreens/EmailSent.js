@@ -10,10 +10,10 @@ export default function EmailSent({navigation}) {
                 <Image source={require('../Assets/EmailSentUpsideDown.png')} style={styles.Image2} />
             </View>
             <View style={styles.Section2}>
-                    <Text style={{fontSize:20, marginHorizontal:15, marginVertical:5, color:'black', textAlign:'center', fontFamily:'Poppins-Medium'}}>Email has been sent successfully</Text>
+                    <Text style={{fontSize:20, marginHorizontal:15, marginVertical:5, color:'#2C2C4E', textAlign:'center', fontFamily:'Poppins-Medium'}}>Email has been sent successfully</Text>
             </View>
             <TouchableOpacity style={styles.NewAccBTN} onPress={()=>navigation.navigate('LoginPhone')}>
-                <LinearGradient style={{width:'100%',height:'100%', alignItems:'center', justifyContent:'center', borderRadius:10}} colors={['#1774FF', '#8A1DDD']} locations={[0,0.99]}>
+                <LinearGradient style={{width:'100%',height:'100%', alignItems:'center', justifyContent:'center', borderRadius:10}} colors={['#1774FF', '#8A1DDD']} locations={[0,0.85]}>
                     <Text style={{fontFamily:'Poppins-Regular',  color:'white', letterSpacing:0.9}}>Continue</Text>
                 </LinearGradient>
             </TouchableOpacity>
@@ -57,6 +57,6 @@ const styles = StyleSheet.create({
         alignSelf:'center',
         borderRadius:10,
         marginTop:'40%',
-        marginBottom:'10%'
+        marginBottom:'5%'
     },
 })

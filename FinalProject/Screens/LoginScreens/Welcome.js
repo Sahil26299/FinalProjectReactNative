@@ -1,10 +1,10 @@
 import { View, Text, StyleSheet, Image, ScrollView } from 'react-native'
-import React from 'react'
+import React, {useState} from 'react'
 import LinearGradient from 'react-native-linear-gradient';
 
 export default function Welcome({navigation}) {
   setTimeout(() => {
-    navigation.navigate('SliderMain');
+    navigation.replace('SliderMain');
   }, 3000);
   return (
     <LinearGradient locations={[0, 0.5, 1]} colors={['#5585F5', 'transparent', '#5585F5']} style={styles.container}>

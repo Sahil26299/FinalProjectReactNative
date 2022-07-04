@@ -11,8 +11,8 @@ export default function SlideScreens1() {
               <Image source={require('../Assets/Mask4.png')} style={styles.Image2} />
           </View>
           <View style={styles.Section2}>
-              <Text style={{fontSize:25, color:'black', fontFamily:'Poppins-Regular'}}>Loyalty Reward:</Text>
-              <Text style={{fontSize:15, color:'black', fontFamily:'Poppins-Regular'}}>Earn crypto for every transaction you make.</Text>
+              <Text style={{fontSize:25, color:'#2C2C4E', fontFamily:'Poppins-Regular'}}>Loyalty Reward:</Text>
+              <Text style={{fontSize:15, color:'#2C2C4E', fontFamily:'Poppins-Regular'}}>Earn crypto for every transaction you make.</Text>
           </View>
       </ScrollView>
   )
@@ -38,6 +38,6 @@ const styles = StyleSheet.create({
     Section2:{
       flex:1,
       paddingHorizontal:20,
-      marginTop:'-40%'
+      marginTop:'-50%'
     }
 })

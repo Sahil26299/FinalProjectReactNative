@@ -9,8 +9,8 @@ export default function SlideScreens1() {
               <Image source={require('../Assets/Mask2.png')} style={styles.Image2} />
           </View>
           <View style={styles.Section2}>
-              <Text style={{fontSize:25, color:'black', fontFamily:'Poppins-Regular'}}>Safe & Secure</Text>
-              <Text style={{fontSize:15, color:'black', fontFamily:'Poppins-Regular'}}>BUY, SELL crypto in few clicks. SEND and RECIEVE crypto for free.</Text>
+              <Text style={{fontSize:25, color:'#2C2C4E', fontFamily:'Poppins-Regular'}}>Safe & Secure</Text>
+              <Text style={{fontSize:15, color:'#2C2C4E', fontFamily:'Poppins-Regular'}}>BUY, SELL crypto in few clicks. SEND and RECIEVE crypto for free.</Text>
           </View>
       </ScrollView>
   )

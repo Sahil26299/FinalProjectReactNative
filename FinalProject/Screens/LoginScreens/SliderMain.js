@@ -33,6 +33,13 @@ export default function SliderMain({navigation}) {
 
     return (
         <View style={styles.Container}>
+            {scrollIndicators!=0?<AntDesign name='arrowleft' size={25} style={{margin:15}} onPress={()=>{
+                const index=--scrollIndicators
+                setScrollIndicators(index)
+                if(index<3){
+                    FlatListRef.current.scrollToIndex({animated: true,index:index})
+                }
+            }} />:<View></View>}
             <FlatList
                 data={DATA}
                 renderItem={({item})=>{
@@ -60,14 +67,15 @@ export default function SliderMain({navigation}) {
                 <View style={{height:7, width:scrollIndicators==2 ? 20 : 7, backgroundColor:scrollIndicators==2 ?'#1774FF':'grey', marginHorizontal:5, borderRadius:5}}></View>
             </View>
             <View style={styles.Section2}>
-                <LinearGradient style={styles.NextBTN} colors={['#1774FF', '#8A1DDD']} locations={[0,0.75]} >
+                <LinearGradient style={styles.NextBTN} colors={['#1774FF', '#8A1DDD']} locations={[0,0.85]} >
                     <AntDesign name='arrowright' size={40} color={'white'} onPress={()=>{
-                        const index=scrollIndicators++
+                        const index=++scrollIndicators
                         setScrollIndicators(index)
                         if(index<3){
                             FlatListRef.current.scrollToIndex({animated: true,index:index})
                         }else{
                             navigation.navigate('Login1');
+                            setScrollIndicators(2);
                         }
                     }} />
                 </LinearGradient>
