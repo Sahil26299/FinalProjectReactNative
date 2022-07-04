@@ -2,7 +2,7 @@ import { View, Text, StyleSheet, Image, ScrollView, TextInput, TouchableOpacity 
 import React from 'react'
 import LinearGradient from 'react-native-linear-gradient';
 
-export default function CreateNewAcc() {
+export default function CreateNewAcc({navigation}) {
   return (
       <ScrollView style={styles.container}>
           <View style={styles.Section1}>
@@ -10,11 +10,11 @@ export default function CreateNewAcc() {
               <Image source={require('../Assets/CreateNewAccUpsideDown.png')} style={styles.Image2} />
           </View>
           <View style={styles.Section2}>
-                <Text style={{fontSize:20, color:'black', fontFamily:'Poppins-Regular', marginBottom:25}}>Create New Account</Text>
+                <Text style={{fontSize:20, color:'black', fontFamily:'Poppins-Medium', marginBottom:25}}>Create New Account</Text>
                 <Text style={{fontSize:14, color:'black', fontFamily:'Poppins-Regular'}}>E-mail</Text>
                 <TextInput style={styles.RefCodeInp} />
                 <Text style={{fontSize:12, marginHorizontal:10, marginVertical:5, color:'rgba(109, 104, 104, 1)', fontFamily:'Poppins-Regular'}}>By signing up, you’re agree to our <Text style={{color:'#1774FF'}}>Privacy Policy</Text> and <Text style={{color:'#1774FF'}}>Terms and conditions</Text>.</Text>
-                <TouchableOpacity style={styles.NewAccBTN}>
+                <TouchableOpacity style={styles.NewAccBTN} onPress={()=>navigation.navigate('EmailSent')}>
                     <LinearGradient style={{width:'100%',height:'100%', alignItems:'center', justifyContent:'center', borderRadius:10}} colors={['#1774FF', '#8A1DDD']} locations={[0,0.99]}>
                         <Text style={{fontFamily:'Poppins-Regular',  color:'white', letterSpacing:0.9}}>Continue</Text>
                     </LinearGradient>
